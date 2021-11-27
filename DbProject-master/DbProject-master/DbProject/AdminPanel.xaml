@@ -1,0 +1,22 @@
+﻿<Window x:Class="DbProject.AdminPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DbProject"
+        mc:Ignorable="d"
+        Title="Панель администратора" Height="200" Width="260" ResizeMode="NoResize">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="69*"/>
+            <RowDefinition Height="88*"/>
+        </Grid.RowDefinitions>
+        <Grid Background="Orange">
+            <TextBlock Text="Админ - панель" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
+        </Grid>
+        <Button Name="btnGoBookAdmin" Content="Управление книгами" Width="220" Height="30" Grid.Row="1" Background="Orange" Foreground="White" FontSize="14" Click="btnGoBookAdmin_Click"/>
+        <Button Name="btnGoUserAdmin" Content="Управление администраторами" Width="220" Height="30" Grid.Row="2" Background="Orange" Foreground="White" FontSize="14" Click="btnGoUserAdmin_Click"/>
+
+    </Grid>
+</Window>
